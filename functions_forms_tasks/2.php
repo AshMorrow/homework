@@ -12,15 +12,27 @@
 function topWords($word){
     $top = array();
     $word = explode(" ",$word);
-    $lenght = array();
-    foreach($word as $k){
-        $lenght[] = mb_strlen($k);
+    $wordLenght = array();
+
+    foreach($word as $k => $v){
+        $word[$k] = array('word' => $v,'length' => mb_strlen($v));
+        $wordLenght[] = mb_strlen($v);
     }
-    for($i;$i<count($word);$i++){
-        
+    //$wordLenght = array_unique($wordLenght);
+    rsort($wordLenght);
+    for($i = 0;$i < 3;$i++){
+        for($k = 0;$k < count($word);$k++){
+            if(isset($word[$k]) && $word[$k]['length'] == $wordLenght[$i]){
+                $top[] = array('word' => $word[$k]['word'],'lenght' => $word[$k]['length']);
+                unset($word[$k]);
+                break;
+            }
+        }
     }
     return $top;
 }
 if($_GET) {
+    echo  "<pre>";
     var_dump(topWords($_GET['word']));
+    echo "</pre>";
 }
