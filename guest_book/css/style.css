@@ -1,0 +1,86 @@
+body{
+    background-image: url("../img/bg_body.png");
+    font-family: 'Open Sans', sans-serif;
+    color: #3c3c3c;
+}
+li{
+    list-style-image: url("../img/menu_marker.png");
+}
+nav{
+    width:90%;
+    z-index: 999;
+    position: relative;
+    text-align: center;
+    background-color: #FFC000;
+    padding: 10px 0px 10px;
+    margin: 0px auto 62px;
+    border-radius: 0px 0px 28px 28px;
+}
+nav > ul{
+    text-align: center;
+    position: relative;
+}
+ul > li + li::after {
+    display: block;
+    content: "";
+    position: absolute;
+    background: transparent url("../img/menu_marker.png") no-repeat scroll 0px 0px;
+    width: 9px;
+    height: 9px;
+    left: -32px;
+    top: 27px;
+}
+nav li{
+    z-index: 900;
+    float: none;
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: 'Marck Script', cursive;
+}
+nav > ul.nav-tabs.nav-justified > li > a {
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border-bottom: 0px;
+    font-size: 27px;
+}
+.nav > li > a:focus, .nav > li > a:hover{
+	background:transparent !important;
+	border:0px;
+	
+}
+div#logo{
+
+    text-align: center;
+}
+div#logo a{
+    display: inline-block;
+    overflow: hidden;
+    width: 463px;
+    font-size: 0px;
+    line-height: 0;
+    height: 99px;
+    transition: all 0s ease 0s;
+}
+div.contentBg{
+    margin: 0px auto 71px;
+    background-color: #FFF;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 0px 5px #D7D5C8;
+}
+.box{
+    background-color: #FEFBEA;
+    padding: 23px 21px 24px;
+}
+.sepClass{
+    padding: 37px 0px 36px 5px;
+    text-align: center;
+    background-color: #FBFAF7;
+}
+footer {
+    display: block;
+    text-align: center;
+    padding: 44px 0px 48px;
+}
