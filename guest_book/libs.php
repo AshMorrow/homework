@@ -101,14 +101,10 @@ function showBadWods($cen){
 function userLogin(){
     if(isset($_POST["submit"])){
         $users = json_decode(file_get_contents("users/passwd"),true);
-        var_dump($users);
         if($users["login"] == md5($_POST["userLogin"]) && $users["password"] == md5($_POST["userPass"])){
-            if ($_SESSION) {
-                $_SESSION["sessionId"] = session_id();
-                header("Location: ./adm.php");
-                exit;
-            }
-
+            $_SESSION["sessionId"] = session_id();
+            header("Location: ./adm.php");
+            exit;
         }
     }
 }
