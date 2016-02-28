@@ -1,0 +1,133 @@
+body{
+    background-image: url("../img/footer_lodyas.png");
+    font-family: 'Open Sans', sans-serif;
+    color: #3c3c3c;
+}
+h1.headH1{
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 5px 0px 20px;
+    border-bottom: 1px solid rgb(188, 188, 188);
+    color: rgb(89, 196, 113);
+}
+h2.headH2{
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 5px 0px 20px;
+    border-bottom: 1px solid rgb(188, 188, 188);
+    color: rgb(89, 196, 113);
+}
+label,input{
+    cursor: pointer;
+}
+.userNameBlock{
+    height: 40px;
+    border-bottom: 2px dashed #b61928;
+    padding: 10px 0px;
+}
+.delForm{
+    float: right;
+}
+.delFormBtn{
+    color: rgb(255, 255, 255);
+    padding: 19px 24px;
+    border: 2px solid rgb(182, 25, 40);
+    font-weight: 600;
+    background: rgb(182, 25, 40) none repeat scroll 0% 0%;
+    transition: all 0.3s ease-out;
+}
+.delFormBtn:hover{
+    background: #ffffff;
+    color: #000;
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+}
+#addBadWordInfo,.checkBoxBlock{
+    text-align: center;
+    padding: 21px 0px 38px;
+}
+#badWordCount{
+    border-right: 1px solid rgb(188, 188, 188);
+}
+/*.commentBlock:nth-child(2n+1)  {
+    text-align: right;
+}*/
+.commentBlock:nth-child(2n+1) .userNameBlock {
+    text-align: right;
+}
+
+.commentBlock:nth-child(2n+1) .panel-body{
+    background: rgba(89, 196, 113, 0.13);
+    text-align: right;
+}
+.addBtn {
+    background-color: #59c471;
+    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15), 0 2px 0 #4ec067;
+    -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15), 0 2px 0 #4ec067;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15), 0 2px 0 #4ec067;
+    color: #fff;
+}
+.loginBtn{
+    border: 2px solid rgb(89, 196, 113);
+    background: rgb(89, 196, 113);
+    color: #fff;
+    padding: 4px 15.5px !important;
+}
+
+.exitBtn{
+    border: 2px solid rgb(182, 25, 40);
+    color: rgb(255, 255, 255);
+    background: rgb(182, 25, 40) none repeat scroll 0% 0%;
+}
+.exitBtn,.loginBtn{
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+    margin-top: -2px;
+    padding: 2px 12px;
+    border-radius: 0px 0px 4px 4px;
+}
+.exitBtn:hover,.loginBtn:hover{
+    background: #ffffff;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+.button{
+    height: 43px;
+    background-clip: padding-box;
+    font-family: 'FuturaBT-Bold',sans-serif;
+    font-size: 18px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    line-height: 43px;
+    text-transform: uppercase;
+    padding: 0 25px;
+    padding-top: 2px;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.15),0 2px 0 #95999b;
+    color: #fff;
+    position: relative;
+    border: 0px;
+    border-radius: 1px;
+}
+.container{
+    background: #ffffff;
+    max-width: 750px !important;
+}
+/******sticky footer*********/
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+margin-bottom: -142px;
+}
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+.site-footer, .page-wrap:after {
+    height: 142px;
+}
+.site-footer {
+    background: orange;
+}
