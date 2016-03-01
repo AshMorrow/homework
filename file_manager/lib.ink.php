@@ -34,7 +34,7 @@ function getFolder($dir,$cdir){
                     style='float:right;'></span>
                     <div class='clearfix'>
                     <form action='' method='post' class='$filename renameForm' style='display:none;'>
-                    <input type='text' name='newName' class='form-control'>
+                    <input type='text' name='newName' class='form-control inputName'>
                     <input type='hidden' name='oldName' value={$filename}>
                     <button type='submit' name='rename' class='btn'> <span class=' glyphicon glyphicon-ok' aria-hidden='true'
                     style='float:right;'></span></button>
