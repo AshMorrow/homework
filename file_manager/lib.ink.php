@@ -33,10 +33,11 @@ function getFolder($dir,$cdir){
                     <span class='glyphicon glyphicon-pencil spRename' value='$filename' aria-hidden='true'
                     style='float:right;'></span>
                     <div class='clearfix'>
-                    <form action='' method='post' class='$filename' style='display:none;'>
+                    <form action='' method='post' class='$filename renameForm' style='display:none;'>
                     <input type='text' name='newName' class='form-control'>
                     <input type='hidden' name='oldName' value={$filename}>
-                    <input type='submit' name='rename' value='Переименовать'>
+                    <button type='submit' name='rename' class='btn'> <span class=' glyphicon glyphicon-ok' aria-hidden='true'
+                    style='float:right;'></span></button>
                     </form>
                     </td>";
                 }
